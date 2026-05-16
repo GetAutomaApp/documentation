@@ -1,4 +1,4 @@
-name: Publish GitBook
+name: Publish with HonKit
 
 on:
   push:
@@ -15,16 +15,16 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '10'
+          node-version: '18'
 
-      - name: Install GitBook CLI
-        run: npm install -g gitbook-cli
+      - name: Install HonKit
+        run: npm install -g honkit
 
-      - name: Install GitBook plugins
-        run: gitbook install
+      - name: Install plugins
+        run: honkit install
 
-      - name: Build GitBook
-        run: gitbook build
+      - name: Build book
+        run: honkit build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
