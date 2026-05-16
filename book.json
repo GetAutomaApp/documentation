@@ -1,0 +1,12 @@
+{
+  "title": "GetAutomaApp Documentation",
+  "description": "Organization-wide product, platform, and engineering documentation for GetAutomaApp.",
+  "language": "en",
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md"
+  },
+  "styles": {
+    "website": "styles/website.css"
+  }
+}
