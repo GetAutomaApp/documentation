@@ -20,9 +20,6 @@ jobs:
       - name: Install HonKit
         run: npm install -g honkit
 
-      - name: Install plugins
-        run: honkit install
-
       - name: Build book
         run: honkit build
 
