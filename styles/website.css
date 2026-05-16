@@ -1,0 +1,85 @@
+:root {
+  --gaa-primary: #0fa958;
+  --gaa-text-primary: #ffffff;
+  --gaa-text-secondary: #b4b4b4;
+  --gaa-surface-1: #000000;
+  --gaa-surface-2: #3c3c3c;
+  --gaa-surface-3: #7c7c7c;
+  --gaa-danger: #fd8b83;
+  --gaa-error: #ff3b2f;
+}
+
+@font-face {
+  font-family: "Crimson Text";
+  src: url("../assets/fonts/CrimsonText-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Crimson Text";
+  src: url("../assets/fonts/CrimsonText-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../assets/fonts/SF-Pro-Text-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.book {
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--gaa-text-primary);
+  background: linear-gradient(180deg, var(--gaa-surface-1) 0%, #131313 50%, #1c1c1c 100%);
+}
+
+.book .book-summary,
+.book .book-body {
+  background: transparent;
+}
+
+.book .book-header,
+.book .book-summary ul.summary li a {
+  color: var(--gaa-text-primary);
+}
+
+.book .book-summary ul.summary li.active > a,
+.book .book-summary ul.summary li a:hover,
+.book .markdown-section a {
+  color: var(--gaa-primary);
+}
+
+.book .markdown-section h1,
+.book .markdown-section h2,
+.book .markdown-section h3,
+.book .markdown-section h4 {
+  font-family: "Crimson Text", Georgia, serif;
+  color: var(--gaa-text-primary);
+}
+
+.book .markdown-section p,
+.book .markdown-section li,
+.book .markdown-section blockquote {
+  color: var(--gaa-text-secondary);
+}
+
+.book .markdown-section code {
+  color: var(--gaa-primary);
+}
